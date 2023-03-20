@@ -38,3 +38,28 @@ function left(direction){
     return direction;
 }
  
+function right(direction){
+    if (direction == "N"){
+        direction = "E"
+    }else if (direction == "E"){
+        direction = "S"
+    }else if (direction == "S"){
+        direction = "V"
+    }else {
+        direction = "N"
+    }
+    return direction;
+}
+
+function move(rover){
+if (rover.direction == "N" ){
+    rover.y =  rover.y + 1;
+}else if (rover.direction == "E"){
+    rover.x = rover.x + 1;
+}else if ( rover.direction == "S"){
+    rover.y = rover.y - 1;
+}else{
+    rover.x = rover.x -1;
+}
+    return rover;
+}
