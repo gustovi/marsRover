@@ -70,7 +70,10 @@ for ( let i of instructions){
         marsRover.direction = left(marsRover.direction)
     }else if (i == "R"){
         marsRover.direction = right(marsRover.direction)
+    }else{
+        marsRover = move(marsRover)
     }
-    return;
+    
 }
-console.log(instructions("1, 3, N"));
+
+console.log(marsRover.x, marsRover.y, marsRover.direction);
