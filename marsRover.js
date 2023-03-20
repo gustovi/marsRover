@@ -13,7 +13,7 @@
 
 // 5 5
 // 1 2 N
-// LMLMLMLMM
+//  
 
 // Output așteptat:
 
@@ -63,3 +63,14 @@ if (rover.direction == "N" ){
 }
     return rover;
 }
+
+let instructions = "LMLMLMLMM";
+for ( let i of instructions){
+    if (i == "L"){
+        marsRover.direction = left(marsRover.direction)
+    }else if (i == "R"){
+        marsRover.direction = right(marsRover.direction)
+    }
+    return;
+}
+console.log(instructions("1, 3, N"));
